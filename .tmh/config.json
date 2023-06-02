@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/rajaninfotech/defaulttenant/testmanager_",
+  "defaultProject": {
+    "id": "bfc08565-9b1a-0000-acbc-0b451e504b9e",
+    "name": "Rajan_AnyTeller Project",
+    "key": "ATP"
+  }
+}

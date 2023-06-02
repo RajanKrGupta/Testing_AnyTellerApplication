@@ -1,0 +1,176 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC2_Withdrawal" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="528,1593" sap2010:WorkflowViewState.IdRef="TC2_Withdrawal_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="clr-namespace:Rajan_AnyTellerLibrary;assembly=Rajan_AnyTellerLibrary" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Rajan_AnyTellerLibrary</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Rajan_AnyTellerLibrary</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TC2_Withdrawal" sap:VirtualizedContainerService.HintSize="492,881" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="oldTrnxNo" />
+      <Variable x:TypeArguments="x:String" Name="newTrx" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: frmAnyTeller" sap:VirtualizedContainerService.HintSize="434,737" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2c29765b-0898-41bf-b4f9-3261c114b648" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Withdrawal'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2c29765b-0898-41bf-b4f9-3261c114b648" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="30, 116, 80, 18" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'Withdrawal'" FullSelectorArgument="&lt;wnd ctrlname='Panel2' /&gt;&lt;wnd ctrlname='rdbWithdrawal' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Panel2' /&gt;&lt;wnd ctrlname='rdbWithdrawal' check:fulltext='Withdrawal' /&gt;" Guid="5de45712-c086-4ad9-91de-95b1d6129298" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAWCAYAAABe+7umAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKRSURBVFhH7VdNqsIwEO6dhOIBRK8R9Aq6dKOLgh4le72A695DUeha0Hn58jvpS2uRvs0jgY82ycxk5stM0hZN01DGeMiEjoxM6MjIhI6MJKGXy4XW6zUtFguaTqf6iT7GU/IZARGhj8eDdrsdrVYrOp/PdL1e6fl86if6GMf8/X6PjGQERIRut1s6HA70fr8p1TB+PB61HNfLCPCEopyXy6Wlrr9Brq/8pShIyLhflBXVTqauqETfPRtJws37saD/GzVVZbzGn2OQX4zQzWZDp9PJUtbfIIczlRviqKuSyqq2fUNWJQTJ5LwCd/a/EDqbzfQZOqTdbjeaz+e/jHlgcSH9u1DkgURHgBQlVbWVK4UiXGVwYbO4PebsKMCGkTPz2l4kbzbNy3F9LRcI0VXjbWODrE8D9bvgCZ1MJpauzw0XFW5/biiGykoWnA5cCpuVYc47yZ3Fe+GCa8lG74xQL2/7PnCmH5GGqlFVwtdMvad81ePd+JsMVTBZiCBcQAhCOQTH2rveGVAgARvDjwl/TqcCxZjLMEa2t2E311VK23ZSP7VOAp5QnIn4NBrSINd3hgImMy2JesyS6zNVjTknubOR418Qquy70jcZFgh1slL7ZmTLSrLMNWNJ/fY6HfCE4tbGd+br9bK0pRvmIffxI185oMuKkQBSeMZ4J7mzkeOsTDEeBdpDqKsATQ5bz9rDmavtQFddlmHTrU5Kv71OBzyhwH6/19+Zn75DIcf10mBBu7Fo9xW8k0Y2XErOcUao6psNMWVYRpcSD9TaAkBWywdtI7JfxOXepf8NofgD4n9KOCtxAeGZ/5SGISLUAeWMMxIXD25zPPO//DAkCc34HpnQkZEJHRmZ0JGRCR0VDf0ACLi9Vm6bUUsAAAAASUVORK5CYII=" InformativeScreenshot="da4ea0c1a80f439bf0e7b6c0ee71fd8f.png" ScopeSelectorArgument="&lt;wnd app='anytellerdemo.exe' ctrlname='frmAnyTeller' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Transaction #'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2c29765b-0898-41bf-b4f9-3261c114b648" TextString="[oldTrnxNo]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="543, 137, 49, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'218431'" FullSelectorArgument="&lt;wnd ctrlname='pnlMain' /&gt;&lt;wnd ctrlname='grpDeposit' /&gt;&lt;wnd ctrlname='lblDepositTransactionNo' /&gt;&lt;ctrl name='218431' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='pnlMain' /&gt;&lt;wnd ctrlname='grpDeposit' /&gt;&lt;wnd ctrlname='lblDepositTransactionNo' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="6110ecd0-ef95-47ad-a429-1830e8bd8bf4" InformativeScreenshot="611cf150d158c2ac6d598c9a1e624828.png" ScopeSelectorArgument="&lt;wnd app='anytellerdemo.exe' ctrlname='frmAnyTeller' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="452, 137, 91, 16" ElementType="Text" FriendlyName="'Transaction #'" FullSelectorArgument="&lt;wnd ctrlname='pnlMain' /&gt;&lt;wnd ctrlname='grpDeposit' /&gt;&lt;wnd ctrlname='Label6' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='pnlMain' /&gt;&lt;wnd ctrlname='grpDeposit' /&gt;&lt;wnd ctrlname='Label6' check:text='Transaction #:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAUCAYAAADr0+FaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVFhH7ZbblcUgCEVTlfXQjcXYi7WkAwcEE+JrnJvkOh9+7LV8gXBUkm3f97CYwxJ/Ikv8iSzxJ7LEn0hDfBdg28JWxQTrazb/Hcrpndi9NcFYj20frBnfY+Dmvxf0+3wndgdbAEdt2g+Cq6ypscS/jbrt3gZjbPDVdSU3xOdxAIOlSE4bNwejSpQBZSd+LAQj5QviU+V579K4zMWbJHT9Euj7mCfbVALOMevzPHA+xs5rDGjR+rEeYMzJ/gIdAB3EL6/gpvgY9BEU9zlxXkO18DgYmd/AcZJRbD2HbdnDY9IxAWXX9isiJ78x6RQv2dbaXCoOG/SR+rxHL9YMOgCxO2t/ZV2F2ze/HFdcTj9fr/ucrLGYbM9foutXk+9RawvDsV7Rgp+1f4xnxcenTU/5LB/EYEJUFrB2sk32zHt+u89b76HaVZvG2mIuocvaldEDeFB86nN54KeMfHqb4jNPc3/1q9FzrbbwUazqYxvXtC5BnYfF132so0XNb6ynxNVfAovfssv9vlXz9Z55X49LHKr2j/Jo2Sn+WKAn4rVPH9nW307fr/gq/nZonP5oeBxcvj/NpTLX+NtpxHqgLk3xsb28pDoD4i/eYok/kSX+RJb4E1niT2MPP9RxA6AoTcndAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="104, 104, 618, 622" FilePath="F:\UiPath Projects\AnyTeller\anytellerdemo.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO/SURBVFhH5ZbvS1NRHMZ96zvfFZQRYb/tBxWtrFgQiUXqkqwI2dD8NWulhqVLmaSzZri2wsw0s0WL1lAzCZVKA0MpzaTsjRHRm+iv+Nbzded6dr3XbLbe9MDDvTv37j6fc873nHtj/kSlz+tpn/8kbWw+TK7hOxRqjq7sAx5a25xGyxuTw/xPALSChaMKkN1TqRkqO2oApuAZzUC1owIwn55vbcukLH9ZdHqvFSic8cBGtffdlFdqpTUb1lFsbCwg+BgfH08mk2lhUHoFt6IxhaqDbko9ms6BwnFxcQyCcKk9MtkHvZrhcG3QS0uWLVVCKxsc5HjUEHmYlvR6X/rESasT13J44pZNDCPurX/Z8vcg1MEwiu2cs0LpOcIxHZlNRZReeIwMxp1kNBoXDoHtVQsAvUfwr1sYBNvvEW+hMvf4r9Vq5SI0GAyRg6R05GkCVNyu4XC4qt1Fu1pP0Lak7Uq4SpED6M3/eVcVh6PHGA30Hr/5TyolJSXpgf1eaYHTpOViB282/GB7r5tyPCW6AJiK0HT9udb7Umnl3ZQwr24/SEUXz3Igqv/E4xLKrMnVBbBYLJEDGAPmWQCwegoKfOW6AAkJCXTg0IHIAMy95ZoAchHiPnyI7E3fr9dTagm2Ku2j38dp8Ntr6v7SQ/7JoK75ZvdYuybApW6PCFeWYVpTPm3asYXbUHjoOc4xWtdHb3Jgy8e26QdraPzHh2mwqd4ZAEgO3uw7TBldNrJ0ltPxvCwOQK+dAS8XZ/KdXK6HrIo8yqzMJmdXA2X051LwcyeVDdn5oTi/OOyg9sm7ujBhwl6AYkQwhlosRex+4q0nlhl2SFw7++IKrQqYyDHqZYCr72+S+52XbK9KldBbE00Mcmm4mgFDzdpC70SwMPYIXJNfvVie2JjQjuLE8WqHl2oap89PDxRT4YCNz4Vcby6Tfaic7R5r4KkKXZqR3HPZmHtcx3L8dQizAJPMyn95imA5qP9rH4+GAIFDl2aEl40aAG0YnYLHVVTdVk85xQW8JS9avIiNqcG3Al7TN3pv80Nr37oYAFYX5b1PPgUk1BQuNQDCZTDUAL6OcK+tr47Mz+x0bayV6yC9L5trAdcwDQICtYE2WZiK0OlsyWF77puVcNmiCGH7G48CgCOegaITALBjhPeV+QsFONcXshoA4cLuiWYOw1DLEGKZzlsYYq1wWAawDtXS8edWBUCMAiQDwPIynbcAon5tywC7n+bQhZE6zVFA0akh1Mt0Qbr+8WHYw/xTc284mnvAf6yYmJ8l1w6ngw3B7gAAAABJRU5ErkJggg==" InformativeScreenshot="9019158745070042845763b9c584fbfd.png" Selector="&lt;wnd app='anytellerdemo.exe' ctrlname='frmAnyTeller' /&gt;" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <r:S_PostWithdrawal DisplayName="Any Teller Post Withdrawal transaction" sap:VirtualizedContainerService.HintSize="388,192" sap2010:WorkflowViewState.IdRef="S_PostWithdrawal_1" in_check1="2000" in_check2="1000" out_trnxno="[newTrx]" />
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Inequality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[oldTrnxNo]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[newTrx]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>
